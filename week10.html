@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Week 10 tasks">
+<meta name="keywords" content="HTML, CSS, MADA tasks">
+<meta name="author" content="2572908f">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styling.css">
+<style>
+	body {
+	  text-align: justify;
+	}
+	</style>
+	<title>Week 10</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+
+<body>
+
+	<div class ="container">
+		<img src= "menu.png" class="menu-icon" onclick="openmenu()">
+		
+		<div class="menu-box" id="menu">
+			<div class="right-links">
+		<a href="index.html">Home</a>
+		<img src="close.png" onclick="closemenu()">
+			</div>
+		<div class="menu-links">
+			<a href="week1.html">Week 1</a>
+			<a href="week2.html">Week 2</a>
+			<a href="week3.html">Week 3</a>
+			<a href="week4.html">Week 4</a>
+			<a href="week5.html">Week 5</a>
+			<a href="week7.html">Week 7</a>
+			<a href="week8.html">Week 8</a>
+			<a href="week9.html">Week 9</a>
+			<a href="week10.html">Week 10</a>
+			
+		</div>
+		</div>
+		</div>
+		</div>
+		
+		<script>
+		var menu = document.getElementById("menu");
+		
+		function closemenu(){
+			menu.style.top = "-100vh";
+		}
+		function openmenu(){
+			menu.style.top = "17%";
+		}
+		
+		
+		
+		</script>
+
+	<!-- begin the main section of the page-->
+	<div id="week10content">
+<br>
+<br>
+		<center><u><h1>Week 10 - IL activity: Evaluating accessible design <br><br>Characteristics</h1></u></center>
+<br>
+<h3>Skip to the main <a rel="noopener" target="_blank" href="#week10tasks">Week 10 tasks</a> section.</h3>
+		
+		<hr>
+	
+<br>
+<h2>Task 1: Evaluate websites against accessibility standards</h2>
+
+<p>I am using <a href="https://www.ageuk.org.uk">Age UK</a> for this exercise.</p>
+
+<p>Findings:</p>
+
+<li><a href="https://wave.webaim.org/report#/https://www.ageuk.org.uk">WAVE Web Accessibility Evaluation Tool</a></li>
+
+<center><p><img src="images/sc37-wave-results.jpg" alt="WAVE accessibility evaluation report from ageuk.org" height="530"></p></center>
+
+
+
+<div class="box">
+	<p><img src="images/sc38-wave-results-details.jpg" alt="WAVE accessibility evaluation report details from ageuk.org" height="600" style="float: left; margin: 20px;"></p>
+  </div>
+  <!-- Image container end -->
+	  
+  <!-- Text container start -->
+  <div>
+	<br>
+	
+	<p> This website is very accessible with a limited amount of errors.
+		After all, the organisation specialises in working with the 
+		elderly, people with impairments, or disabilities. They have to be
+		an example of how accessibility should look like. 
+</p>
+
+<p>According to the results, there are 70 redundant links, which upon looking
+	though I wouldn't have called redundant as they lead to specific topics
+	and whole other parts of the website that discuss different aspects of
+	senior living. They were flagged as redundant because both the image and 
+	the text links for an artcle/elements are the same. However, I think
+	that is good in this case as it increases the clickable area -
+	user can click an image or the text to go to the same page. This feature 
+	helps seniors, people with reduced mobility, or vision impairments.
+</p>
+<p>There is 7 linked images that are missing alternative text and 3 items
+	are missing form labels, which assist screen users. As much as this is 
+	a valid concern, those are very small numbers of errors and the website 
+	is still almost fully accessible for all.
+</p>
+<br>
+  </div>
+  <!-- Text container end -->
+
+<li><a href="https://webaim.org/resources/contrastchecker/?fcolor=0000FF&bcolor=FFFFFF">WebAIM Contrast Checker</a></li>
+<br>
+<style>
+	* {
+	  box-sizing: border-box;
+	}
+	
+	.column {
+	  float: left;
+	  width: 50%;
+	  padding: 5px;
+	}
+	
+	/* Clearfix (clear floats) */
+	.row::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	}
+	</style>
+
+<div class="row">
+	<div class="column">
+	  <img src="images/sc39-contrast-checker-1.jpg" alt="contrast checker outcome for pink and white" style="width:100%">
+	</div>
+	<div class="column">
+	  <img src="images/sc40-contrast-checker-2.jpg" alt="contrast checker outcome for grey and blue" style="width:100%">
+	</div>
+</div>
+<p>The website uses many colour combinations on the homepage. I checked
+	two of them, but they are very clearly high contrast colours. Also,
+	the previous evaluation website indicated that their is zero contrast 
+	errors on the site. High contrast is important for everyone. It enhances the 
+	professional look of the website and helps people with colour 
+	blindness or those with visual impairments interact with the interface.
+</p>
+
+<li><a href="https://webaim.org/resources/linkcontrastchecker/?fcolor=0000FF&bcolor=FFFFFF">WebAIM Text, Background and Link Checker</a></li>
+
+<div class="box">
+	<p><img src="images/sc41-contrast-checker-3.jpg" alt="background, link and text contrast results for ageuk.org" height="400" style="float: left; margin: 20px;"></p>
+  </div>
+  <!-- Image container end -->
+	  
+  <!-- Text container start -->
+  <div>
+	<br>
+	<br>
+	<p> It really surprised me to learn that the contrast between the link 
+		and text colour is a fail according to WCAG A. Both of the colours 
+		are blues, but one is much lighter than the other and you can clearly 
+		tell when you have hovered over a link. That said, apparently 
+		this needs improved at ageuk.org. However, at the same time the user 
+		doesn't need to use the text links that change colour, they can also 
+		use the images above the text that as hyperlinked as well. 
+</p>
+<br>
+  </div>
+  <!-- Text container end -->
+<br>
+  <li><a href="https://www.webfx.com/tools/read-able/?url=https://www.ageuk.org.uk">Readability Test Tool</a></li>
+
+  <center><p><img src="images/sc42-readability-results-1.jpg" alt="readability scores for ageuk.org" height="530"></p></center>
+  <center><p><img src="images/sc43-readability-results-2.jpg" alt="readability scores for ageuk.org" height="430"></p></center>
+
+<p>According to the results, "Age UK has an average reading ease of about 66 of 100. It should be easily understood by 12 to 13 year olds."
+	This means that the website uses simple terminology that is accessible 
+	to those who have limited knowledge of using technology. This is ideal, as 
+	the website's purpose is to guide people who want to learn how to use it.
+</p>
+
+<p>My website is very simple to use, which makes it quite accessible.
+	It features a large sans serif font that improves readability and a white 
+	background that provides high contrast for dark-coloured text.
+	However, in this exercise I learned that my text to link contrast 
+	is not sufficient for WCAG A standards. The way I attempted to deal 
+	with this is to remove the underline for links once hovered over.
+	In this way, everyone is able to see the difference between regular text and 
+	links. The alternative text is something that I could improve and focus more 
+	on in the final version of the site so that it is more descriptive for 
+	people who need it.
+</p>
+
+<hr>
+<br>
+<section id="week10tasks"></section>
+<center><h1>Week 10 - Lab activity: Accessibility</h1></center>
+
+<p><u>Try to consider at least 3 ways that you could support accessibility in your MAD(B) project</u></p>
+
+<p><b>1. Breaking down information</b></p>
+<p>My paragraphs are quite large at times, so I will aim to 
+	"break text down into shorter sections and use headings and
+	subheadings to make it easy to find desired content"
+	<a href="https://www.homecarepulse.com/articles/how-to-make-your-website-more-senior-friendly/"> [1]</a>.
+	This is especially important for seniors, as 
+	large bodies of text can be intimidating and difficult to navigate.
+</p>
+
+<p><b>2. Adding images with alt text</b></p>
+<p>"A picture may be worth a thousand words,
+	but visual elements like images are an accessibility barrier
+	to blind users and those with low vision"
+	<a href="https://www.searchenginejournal.com/make-website-more-accessible/347450/"> [2]</a>.
+I have added some alt text to my site already, but I would like to make 
+it more descriptive for people who rely on technologies such as 
+screen or Braille readers. I would make sure to describe the image as clearly as possible.</p>
+
+<p><b>3. High-contrast colours</b></p>
+
+<p>While using the contrast checkers I learned that my link colour and 
+	text colour might not be accessible. "For those who are visually
+	impaired or colorblind, using high-contrast colors can make text much
+	more readable. As an added bonus, using colors that have significant
+	contrast improves the experience for not only older people or
+	vision-impaired people but also those viewing your site from a
+	smaller screen (i.e. a smartphone) or an older or lower-quality monitor"
+	<a href="https://webarc.tech/web-accessibility-older-adults/"> [3]</a>.
+	I would aim to achieve this by using contrast checker tools such as 
+	the <a href="https://webaim.org/resources/linkcontrastchecker/?fcolor=0000FF&bcolor=FFFFFF">WebAIM Text, Background and Link Checker</a>.
+</p>
+
+<br>
+
+
+
+
+
+
+
+	</div>
+	<!-- end the main section of the page -->
+	<hr>	
+	<!-- begin navigation menu -->
+	<footer>
+
+		<div id="menu">
+			<h2><a href="week9.html">Week 9</a></h2>
+			<h2><a href="index.html" style="float:right;">Homepage</a></h2>
+			</div>
+
+	</footer>
+	<br>
+	<!-- end navigation menu -->
+
+</body>
+</html>

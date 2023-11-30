@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Week 4 tasks">
+<meta name="keywords" content="HTML, CSS, MADA tasks">
+<meta name="author" content="2572908f">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styling.css">
+<style>
+	body {
+	  text-align: justify;
+	}
+	</style>
+	<title>Week 4</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+
+<body>
+
+	<div class ="container">
+		<img src= "menu.png" class="menu-icon" onclick="openmenu()">
+		
+		<div class="menu-box" id="menu">
+			<div class="right-links">
+		<a href="index.html">Home</a>
+		<img src="close.png" onclick="closemenu()">
+			</div>
+		<div class="menu-links">
+			<a href="week1.html">Week 1</a>
+			<a href="week2.html">Week 2</a>
+			<a href="week3.html">Week 3</a>
+			<a href="week4.html">Week 4</a>
+			<a href="week5.html">Week 5</a>
+			<a href="week7.html">Week 7</a>
+			<a href="week8.html">Week 8</a>
+			<a href="week9.html">Week 9</a>
+			<a href="week10.html">Week 10</a>
+			
+		</div>
+		</div>
+		</div>
+		</div>
+		
+		<script>
+		var menu = document.getElementById("menu");
+		
+		function closemenu(){
+			menu.style.top = "-100vh";
+		}
+		function openmenu(){
+			menu.style.top = "17%";
+		}
+		
+		
+		
+		</script>
+
+
+
+
+
+
+
+	<!-- begin the main section of the page-->
+	<div id="week3content">
+<br>
+<br>
+		<center><u><h1>Week 4 - IL activity: CSS revision</h1></u></center>
+<br>
+<h2>Task 1</h2>
+		<p>I am using CSS when it comes to adapting the colours of specific
+			elements across the website to make it consistent across. I'm also
+			adapting the space in which I want all content to lie within 
+			through restricting the "body" space. In this way, I am able to
+			use the white space on each side, which helps to increase
+			readability and reduce visual clutter
+			<a href="https://www.researchgate.net/profile/Constantinos-Coursaris/publication/269639066_Web_Aesthetics_and_Usability/links/565cbb5b08ae4988a7bb8090/Web-Aesthetics-and-Usability.pdf">[1]</a>.
+		This is important because in our day to day lives we experience more information
+		getting thrown at us than ever, which can lead to information overload.
+		"Information overload is a problem that is being exacerbated by
+		the ongoing digitalization of the world of work and the growing use
+		of information and communication technologies
+		<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10322198/">[2]</a>."
+		Thinking about my audience, it's the last thing I want to happen to them
+		when interacting with my website. Here are some visual examples I found on
+		<a href="https://ux.stackexchange.com/questions/104705/why-do-many-sites-leave-half-of-each-webpage-empty">Stack Exchange</a>
+		of why using white space on the sides is important and effective:</p>
+<br>
+		<li>No use of white space; clutter; doesn't encourage the user to read
+			more; overwhelming
+		</li>
+		<p><center><img src="images/img08-stack-exchange.jpg" alt="website with minimal white space" height="480"></center></p>
+		<br>
+		<li>Uneven; looks odd; poor distribution</li>
+	
+		<p><center><img src="images/img09-stack-exchange-2.jpg" alt="website with ineffective white space" height="480"></center></p>
+		<p><center><img src="images/img10-stack-exchange-3.jpg" alt="website with ineffective white space" height="480"></center></p>
+		<p><center><img src="images/img11-stack-exchange-4.jpg" alt="website with ineffective white space" height="480"></center></p>
+	
+	<li>Centered; efficient for all screens; catches the eye</li>
+
+	<p><center><img src="images/img12-stack-exchange-5.jpg" alt="centered website with effective white space" height="480"></center></p>
+		
+	<p>According to <a href="https://www.webfx.com/blog/web-design/improving-usability-with-fitts-law/">Web FX</a>,
+	and Fitts's law, "the bigger an object and the closer it is to us, the easier it is to move to."
+Therefore, centering my design through the use of white space at both sides
+of the screen has a special meaning to my elderly users who may differ in their 
+motor control abilities. "When web layout is located at the center
+of the screen, the user can interact with the browser software and
+operating system much more efficiently," as all information and links or menus
+stay within a limited area which minimises cursor movement distance.</p>
+
+<p>Additionally, upon researching further into how I want my design to actually
+	look like, I came across retro websites t9hat inspired me. I decided I want
+	to utilise a "retro" look for my website, as it is minimalistic and simple
+	to use/explore. This would not only look interesting, but set my website
+	aside from all other websites directed at the elderly available at the market.
+Websites that I explored are <a href="https://non-os.webflow.io">Non Os</a> and some
+websites I found though the <a href="https://web.archive.org/web/20001205055600/http://geocities.yahoo.com:80/home">Wayback Machine</a>, like Geocities.</p>
+
+<p><center><img src="images/sc14-geocities.jpg" alt="archival geocities website" height="480"></center></p>
+<p><center><img src="images/sc15-non-os.jpg" alt="non on website" height="480"></center></p>
+
+<p>Those two designs are very different, but they both have an old-timey
+feel to their interface and they both primarily utilise the center of the screen.
+I do not want to copy those designs, but rather use CSS to create something
+in the middle, that encapsulates an old, simple interface, but take it
+clutter-free and bring a modern twist on it, while sticking to the theme.
+</p>
+
+<p>In order to do that, I will use CSS to format all my website's font to Helvetica,
+	which is the most popular font in the world. "Older adults and people
+	with low vision have less difficulty processing type faces like Arial
+	or Helvetica. Without the serifs, it’s easier to recognize characters
+	<a href="https://www.uxmatters.com/mt/archives/2010/05/designing-for-senior-citizens-organizing-your-work-schedule.php">[3]</a>."
+In my eyes, the font also contributes to a sort of retro look on the site,
+having enlarged it quite a bit for my audience.
+</p>
+
+<p>On top of that, because the letters have been enlarged, I adjusted
+	the space between the lines in all paragraphs, so that the text is easier
+	and faster to read. 
+</p>
+<p>CSS is helpful in managing the links settings and the way users
+	can interact with them. For my website, once hovered over the links
+	turn into darker navy blue and their underline disappears so that the user can clearly tell that 
+	this is a selectable element. Additionally, when interacting with the
+	active link, the background changes to pink. This informs the user that 
+	the link is currently being used. 
+</p>
+<p>I'm also using the in line feature to put elements next to each other
+	in one line and style tables so that they are readable and selectable.
+</p>
+<p>Of course, there's many more uses of CSS than those,
+	but these are important for my website now.
+</p>
+		
+	</section>	
+	
+
+
+	</div>
+	<!-- end the main section of the page -->
+	<hr>	
+	<!-- begin navigation menu -->
+	<footer>
+
+	<div id="menu">
+	<h2><a href="week3.html">Week 3</a></h2>
+	&nbsp;
+	<h2><a href="index.html" style="margin-left: 290px;">Homepage</a></h2>
+	&nbsp;
+	<h2><a href="week5.html" style="float:right;">Week 5</a></h2>
+	</div>
+<br>
+
+	</footer>
+	<br>
+	<!-- end navigation menu -->
+
+</body>
+</html>
